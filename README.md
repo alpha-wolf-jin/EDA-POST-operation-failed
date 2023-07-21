@@ -67,6 +67,8 @@ logout
 
 [eda@eda ~]$ podman ps
 CONTAINER ID  IMAGE       COMMAND     CREATED     STATUS      PORTS       NAMES
+
+# reboot
 ```
 
 
