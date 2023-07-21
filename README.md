@@ -63,6 +63,8 @@ logout
 [root@eda ~]# find /tmp -name "*pause*"
 /tmp/ansible.gm3vytl7/libpod/tmp/pause.pid
 
+[root@eda ~]# rm -f /tmp/ansible.gm3vytl7/libpod/tmp/pause.pid
+
 [root@eda ~]# su - eda
 
 [eda@eda ~]$ podman ps
