@@ -1,6 +1,7 @@
 # EDA-POST-operation-failed
 
-**When active the rulebook in AAP2.4 EDA console, encounted the below error**
+## Issue 01
+**When active the rulebook in AAP2.4 EDA console, encountered the below error**
 ```
 Pulling image quay.io/albert2013/de-kafka-rhel9-03:latest
 Activation eda_rulebase_02 failed: http://%2Frun%2Fuser%2F993%2Fpodman%2Fpodman.sock/v4.5.0/libpod/images/pull (POST operation failed)
@@ -36,7 +37,9 @@ ERRO[0000] Free container lock: no such file or directory
 # reboot
 
 ```
-**When active the rulebook in AAP2.4 EDA console, encounted the below error**
+
+## Issue 02
+**When active the rulebook in AAP2.4 EDA console, encountered the below error**
 ```
 Attempting to login to registry: quay.io
 
@@ -72,7 +75,16 @@ CONTAINER ID  IMAGE       COMMAND     CREATED     STATUS      PORTS       NAMES
 
 # reboot
 ```
+## Issue 03
 
+**When the EDA triggers the job template, it should below error in history**
+```
+2023-07-21 05:00:35,518 - ansible_rulebook.builtin - ERROR - Failed to post to https://aap-eda.example.com/api/v2/job_templates/10/launch/. Status: 400, Body: {"playbook":["Missing a revision to run due to failed project update."]}
+```
+
+**Solution**
+
+Found the related project sync failed on the AAP controller. Fix and Re-run.
 
 
 
